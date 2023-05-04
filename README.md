@@ -15,12 +15,12 @@ Download the datasets by following the instructions in [voxelpose](https://githu
 ### CMU Panoptic dataset
 
 ```
-python run/train_3d.py --cfg configs/panoptic/resnet50/VTP/vtp32_emb256.yaml
+python run/train_3d.py --cfg configs/panoptic/resnet50/VTP/vtp30_emb256.yaml
 ```
 ### Shelf/Campus datasets
 ```
-python run/train_3d.py --cfg configs/shelf/VTP/vtp32_emb256.yaml
-python run/train_3d.py --cfg configs/campus/VTP/vtp32_emb256.yaml
+python run/train_3d.py --cfg configs/shelf/VTP/vtp30_emb256.yaml
+python run/train_3d.py --cfg configs/campus/VTP/vtp30_emb256.yaml
 ```
 
 ## Evaluation
@@ -28,12 +28,12 @@ python run/train_3d.py --cfg configs/campus/VTP/vtp32_emb256.yaml
 
 Evaluate the models. It will print evaluation results to the screen./
 ```
-python test/evaluate.py --cfg configs/panoptic/resnet50/VTP/vtp32_emb256.yaml
+python test/evaluate.py --cfg configs/panoptic/resnet50/VTP/vtp30_emb256.yaml
 ```
 ### Shelf/Campus datasets
 
 It will print the PCP results to the screen.
 ```
-python test/evaluate.py --cfg configs/shelf/VTP/vtp32_emb256.yaml
-python test/evaluate.py --cfg configs/campus/VTP/vtp32_emb256.yaml
+python test/evaluate.py --cfg configs/shelf/VTP/vtp30_emb256.yaml
+python test/evaluate.py --cfg configs/campus/VTP/vtp30_emb256.yaml
 ```
