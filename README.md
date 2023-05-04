@@ -1,7 +1,7 @@
 # VTP(Volumetric Transformer for Multi-view Multi-person 3D Pose Estimation)
 
 ## Reference
-This code based on https://github.com/microsoft/voxelpose-pytorch.
+This code based on https://github.com/microsoft/voxelpose-pytorch. The 'ORIGINAL' in config file is used to decide which model to use, PRN or VTP.
 
 ## Installation
 1. Clone this repo, and we'll call the directory that you cloned multiview-multiperson-pose as ${POSE_ROOT}.
@@ -14,9 +14,8 @@ Download the datasets by following the instructions in [voxelpose](https://githu
 ## Training
 ### CMU Panoptic dataset
 
-Train and validate on the five selected camera views. You can specify the GPU devices and batch size per GPU  in the config file. We trained our models on two GPUs.
 ```
-python run/train_3d.py --cfg configs/panoptic/resnet50/prn64_cpn80x80x20_960x512_cam5.yaml
+python run/train_3d.py --cfg configs/panoptic/resnet50/VTP/vtp32_emb256.yaml
 ```
 ### Shelf/Campus datasets
 ```
